@@ -1,0 +1,17 @@
+$PrimaryColor: #2310d4;
+$PrimaryText: #5e82fc;
+.PrimaryButton {
+  background-color: $PrimaryColor !important;
+  border: 1px solid $PrimaryColor;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: ease-in-out 0.7s;
+  &:hover {
+    background-color: transparent !important;
+    border: 1px solid $PrimaryColor;
+    color: $PrimaryColor !important;
+    transition: ease-in-out 0.7s;
+  }
+}

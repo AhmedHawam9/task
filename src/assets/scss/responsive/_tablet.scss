@@ -1,0 +1,28 @@
+/* ======= Tablet ======= */
+@media only screen and (max-width: 991.98px) {
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .story {
+    .story_container {
+      width: 100%;
+      border-bottom-right-radius: 0;
+      flex-direction: column-reverse;
+      img {
+        border-bottom-right-radius: 0;
+        display: block;
+        margin: 0 auto 2rem;
+        width: 250px;
+      }
+    }
+  }
+}
+/* ======= Tablet ======= */

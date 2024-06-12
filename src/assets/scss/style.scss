@@ -1,0 +1,152 @@
+@import "./_variables.scss";
+@import "./_layout.scss";
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/Almarai-Light.ttf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Almarai-Regular.ttf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/Almarai-Bold.ttf");
+}
+
+@font-face {
+  font-family: "extrabold";
+  src: url("../fonts/Almarai-ExtraBold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f6f8fb !important;
+  font-family: "regular";
+  * {
+    font-family: "regular";
+  }
+  &:lang(ar) {
+    direction: rtl;
+    .header {
+      .robot {
+        left: unset;
+        right: 1rem;
+      }
+    }
+  }
+  &:lang(en) {
+    direction: ltr;
+  }
+}
+
+.header {
+  position: relative;
+  height: 40vh;
+  background-image: linear-gradient(#ebeef6, #819af8);
+  padding: 2rem 0;
+  .robot {
+    position: absolute;
+    bottom: -2rem;
+    left: 1rem;
+    width: 150px;
+  }
+  h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    span {
+      color: $PrimaryColor
+    }
+  }
+}
+
+.story {
+  margin: 5rem 0 4rem;
+  .story_container {
+    width: 90%;
+    background-color: #eeeeee;
+    display: flex;
+    border-bottom-right-radius: 3.125rem;
+    img {
+      border-bottom-right-radius: 3.125rem;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .data_story {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-inline-start: 4rem;
+      padding-inline-end: 3rem;
+      .title_section {
+        color: $PrimaryText;
+        margin-bottom: 0.5rem;
+      }
+      .title {
+        color: #000;
+      }
+      .text {
+        line-height: 2
+      }
+    }
+  }
+}
+
+.why {
+  .why_container {
+    margin-inline-start: auto;
+    border-bottom-left-radius: 3.125rem;
+    border-top-left-radius: 3.125rem;
+    padding: 3rem;
+    background-color: #eeeeee;
+    width: 90%;
+    .title_section {
+      color: $PrimaryText;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      color: #000;
+    }
+    .text {
+      line-height: 2
+    }
+  }
+  .why_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0 0;
+    .service {
+      width: 33%;
+      padding-inline-end: 5%;
+      margin-bottom: 1rem;
+      .title_service {
+        display: flex;
+        align-items: center;
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-inline-end: 0.5rem;
+          background-color: #dfe7ff;
+        }
+      } 
+      .text_service {
+        width: 70%;
+      }  
+    }
+  }
+}
+
+
+
+@import "./_responsive.scss";
