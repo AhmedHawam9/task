@@ -1,0 +1,80 @@
+.footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: rgba($color: $PrimaryColor, $alpha: 0.2);
+    .logo {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    .links {
+        list-style: none;
+        padding: 0;
+        li {
+            margin-top: 1rem;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+    .payment_image {
+        width: 80%;
+    }
+    .phone {
+        text-decoration: none;
+        color: #000;
+    }
+    .follow_us {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        h4 {
+            margin-bottom: 0;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+            padding-inline-start: 1rem;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $PrimaryColor;
+                border: 1px solid $PrimaryColor;
+                transition: 0.7s ease-in-out;
+                width: 40px;
+                height: 40px;
+                margin-inline-end: 0.5rem;
+                border-radius: 50%;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: .5rem;
+                    transition: 0.7s ease-in-out;
+                    i {
+                        color: #fff;
+                        transition: 0.7s ease-in-out;
+                    }
+                }
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid $PrimaryColor;
+                    transition: 0.7s ease-in-out;
+                    a {
+                        transition: 0.7s ease-in-out;
+                        i {
+                            color: $PrimaryColor;
+                            transition: 0.7s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

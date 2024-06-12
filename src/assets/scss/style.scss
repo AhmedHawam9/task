@@ -148,5 +148,133 @@ body {
 }
 
 
+.trademarks-process {
+  position: relative;
+  position: relative;
+}
+.trademarks-process .img_top {
+  height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: 15%;
+  display: block;
+  margin-bottom: -20px;
+}
+@media all and (max-width: 767px) {
+  .trademarks-process .img_top {
+    height: 200px;
+  }
+}
+@media all and (max-width: 400px) {
+  .trademarks-process .img_top {
+    height: 150px;
+  }
+}
+.trademarks-process .process {
+  background: #3160ff;
+  border-radius: 6.25rem;
+  position: relative;
+  padding: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .trademarks-process .process {
+    border-radius: 20px;
+  }
+}
+.trademarks-process .process::before {
+  position: absolute;
+  // content: url("../coworking/images/team/Thuraya bigger image.png");
+  top: -27.5%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 62rem) {
+  .trademarks-process .process::before {
+    display: none;
+  }
+}
+.trademarks-process .process h1,
+.trademarks-process .process p {
+  color: #fff;
+}
+.trademarks-process .process h1 {
+  font-size: 40px;
+  width: 70%;
+  margin: 0 auto 1rem;
+}
+.trademarks-process .process a {
+  color: #09132a;
+  padding: 0.725rem 1.5rem;
+  background: #fff;
+  border: 0.0625rem solid transparent;
+  border-radius: 1.25rem;
+  transition: 300ms all ease-in;
+}
+@media all and (max-width: 480px) {
+  .trademarks-process .process a {
+    display: block;
+  }
+  .trademarks-process .process a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.trademarks-process .process a:hover {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+}
+// .trademarks-process .process a {
+//   color: #fff;
+//   background: transparent;
+//   border-color: #fff;
+// }
+.trademarks-process .process a:hover {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+}
+.trademarks-process {
+  padding-top: 7rem !important;
+}
+.trademarks-process .ss-value *, .trademarks-process .ss-value {
+  color: #fff;
+}
+.trademarks-process p {
+  font-size: 1rem;
+}
+@media all and (min-width: 992px) {
+  .trademarks-process {
+    padding-top: 8rem !important;
+  }
+}
+.trademarks-process .process .cont {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 768px) {
+  .trademarks-process .process .cont {
+    max-width: 75%;
+  }
+}
+
+.robot_content img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  z-index: 9;
+  height: 140%;
+}
+@media all and (min-width: 992px) {
+  .robot_content img {
+    height: 155%;
+  }
+}
+@media all and (max-width: 991px) {
+  .robot_content img {
+    right: -10px;
+  }
+}
+
+
 
 @import "./_responsive.scss";
